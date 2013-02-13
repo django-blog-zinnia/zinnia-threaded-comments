@@ -1,0 +1,149 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: zinnia_threaded_comments\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-02-13 15:03+0100\n"
+"PO-Revision-Date: 2013-02-13 15:15+0100\n"
+"Last-Translator: Fantomas <fantomas42@gmail.com>\n"
+"Language-Team: Fantomas42 <fantomas42@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
+"X-Poedit-Language: French\n"
+"X-Poedit-Country: FRANCE\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: admin.py:13
+msgid "Content"
+msgstr ""
+
+#: admin.py:16
+msgid "Metadata"
+msgstr ""
+
+#: models.py:20
+msgid "reply in comment"
+msgstr "réponse au commentaire"
+
+#: templates/comments/zinnia/entry/form.html:6
+msgid "Cancel reply"
+msgstr "Annuler la réponse"
+
+#: templates/comments/zinnia/entry/form.html:7
+msgid "Post your comment"
+msgstr ""
+
+#: templates/comments/zinnia/entry/form.html:22
+msgid "Comment as"
+msgstr ""
+
+#: templates/comments/zinnia/entry/form.html:22
+msgid "Log out"
+msgstr ""
+
+#: templates/comments/zinnia/entry/form.html:26
+msgid "Post"
+msgstr ""
+
+#: templates/comments/zinnia/entry/form.html:27
+msgid "Preview"
+msgstr ""
+
+#: templates/zinnia/entry_detail_base.html:22
+msgid "RSS Feed of discussions on"
+msgstr ""
+
+#: templates/zinnia/entry_detail_base.html:24
+msgid "RSS Feed of comments on"
+msgstr ""
+
+#: templates/zinnia/entry_detail_base.html:26
+msgid "RSS Feed of pingbacks on"
+msgstr ""
+
+#: templates/zinnia/entry_detail_base.html:28
+msgid "RSS Feed of trackbacks on"
+msgstr ""
+
+#: templates/zinnia/entry_detail_base.html:51
+msgid "Next entry"
+msgstr ""
+
+#: templates/zinnia/entry_detail_base.html:63
+msgid "Previous entry"
+msgstr ""
+
+#: templates/zinnia/entry_detail_base.html:75
+msgid "Related entries"
+msgstr ""
+
+#: templates/zinnia/entry_detail_base.html:87
+msgid "Similar entries"
+msgstr ""
+
+#: templates/zinnia/entry_detail_base.html:95
+msgid "Comments"
+msgstr ""
+
+#: templates/zinnia/entry_detail_base.html:111
+#: templates/zinnia/entry_detail_base.html:155
+#: templates/zinnia/entry_detail_base.html:191
+msgid "on"
+msgstr ""
+
+#: templates/zinnia/entry_detail_base.html:117
+msgid "Direct link to this comment"
+msgstr ""
+
+#: templates/zinnia/entry_detail_base.html:121
+msgid "Reply"
+msgstr "Répondre"
+
+#: templates/zinnia/entry_detail_base.html:132
+#: templates/zinnia/entry_detail_base.html:138
+msgid "Comments are closed."
+msgstr ""
+
+#: templates/zinnia/entry_detail_base.html:136
+msgid "No comments yet."
+msgstr ""
+
+#: templates/zinnia/entry_detail_base.html:146
+msgid "Pingbacks"
+msgstr ""
+
+#: templates/zinnia/entry_detail_base.html:161
+msgid "Direct link to this pingback"
+msgstr ""
+
+#: templates/zinnia/entry_detail_base.html:172
+msgid "Pingbacks are open."
+msgstr ""
+
+#: templates/zinnia/entry_detail_base.html:174
+msgid "Pingbacks are closed."
+msgstr ""
+
+#: templates/zinnia/entry_detail_base.html:182
+msgid "Trackbacks"
+msgstr ""
+
+#: templates/zinnia/entry_detail_base.html:197
+msgid "Direct link to this trackback"
+msgstr ""
+
+#: templates/zinnia/entry_detail_base.html:210
+msgid "Trackback URL"
+msgstr ""
+
+#: templates/zinnia/entry_detail_base.html:228
+#: templates/zinnia/entry_detail_base.html:229
+msgid "Edit the entry"
+msgstr ""
+
