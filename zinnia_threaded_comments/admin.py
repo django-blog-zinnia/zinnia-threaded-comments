@@ -8,6 +8,9 @@ from zinnia_threaded_comments.models import ThreadedComment
 
 
 class ThreadedCommentAdmin(CommentsAdmin):
+    """
+    Admin class for threaded comments
+    """
     fieldsets = ((None,
                   {'fields': ('content_type', 'object_pk', 'site')}),
                  (_('Content'),
