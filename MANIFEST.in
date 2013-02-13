@@ -1,0 +1,11 @@
+include README.rst
+include LICENSE.txt
+include versions.cfg
+include buildout.cfg
+include bootstrap.py
+recursive-include demo_zinnia_threaded_comments *
+recursive-include zinnia_threaded_comments/locale *
+recursive-include zinnia_threaded_comments/static *
+recursive-include zinnia_threaded_comments/templates *.txt *.html *.xml *.js
+prune zinnia_threaded_comments/static/zinnia_threaded_comments/css/.sass-cache
+exclude demo_zinnia_threaded_comments/demo.db
