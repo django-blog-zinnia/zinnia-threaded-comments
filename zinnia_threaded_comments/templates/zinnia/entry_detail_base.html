@@ -92,11 +92,11 @@
 {% endblock %}
 
 {% block entry-comments %}
-<div id="comments" class="comment-root">
+<div id="comments">
   <h3>{% trans "Comments" %}</h3>
   {% if object.comment_count %}
   {% with comment_list=object.comments %}
-  <ol id="comment-list">
+  <ol id="comment-list" class="comment-root">
     {% recursetree comment_list %}
     <li id="comment-{{ node.pk }}-by-{{ node.user_name|slugify }}"
         class="comment vcard {% cycle box1,box2 %}{% if node.user %} authenticated-comment{% if node.user.is_staff %} staff-comment{% endif %}{% if node.user.is_superuser %} superuser-comment{% endif %}{% endif %}">
