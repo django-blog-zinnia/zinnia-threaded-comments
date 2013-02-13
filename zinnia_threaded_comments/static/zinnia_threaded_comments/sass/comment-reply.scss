@@ -1,0 +1,12 @@
+.reply-link {
+  &:after {
+    content: "\21d3";
+  }
+}
+
+#cancel-comment-reply {
+  float: right;
+  &:before {
+    content: "\2297  ";
+  }
+}

@@ -10,6 +10,7 @@
 
 {% block link %}
   {{ block.super }}
+  <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}zinnia_threaded_comments/css/comment-reply.css" />
   {% with previous_entry=object.previous_entry %}{% if previous_entry %}
   <link rel="prev" title="{{ previous_entry.title }}" href="{{ previous_entry.get_absolute_url }}" />
   {% endif %}{% endwith %}
