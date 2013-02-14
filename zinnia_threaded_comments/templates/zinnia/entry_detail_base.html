@@ -118,8 +118,9 @@
            title="{% trans "Direct link to this comment" %}">#</a>
       </p>
       {{ node.comment|linebreaks }}
-      <a href="#comment-form" class="reply-link"
-         onclick="return addComment.moveForm('comment-{{ node.pk }}-by-{{ node.user_name|slugify }}', '{{ node.pk }}', 'comment-form')">{% trans "Reply" %}</a>
+      <p class="comment-reply">
+        <a href="#comment-form" onclick="return addComment.moveForm('comment-{{ node.pk }}-by-{{ node.user_name|slugify }}', '{{ node.pk }}', 'comment-form')">{% trans "Reply" %}</a>
+      </p>
     </li>
     {% if not node.is_leaf_node %}
     <ol class="comment-children">

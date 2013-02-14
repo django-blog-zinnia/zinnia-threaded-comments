@@ -1,1 +1,1 @@
-.reply-link:after{content:"\21d3"}#cancel-comment-reply{float:right}#cancel-comment-reply:before{content:"\2297  "}#comment-list ol{margin-right:0}
+p.comment-reply{margin:0 0 0.5em 0;text-align:right}p.comment-reply a:after{content:"\21d3"}#cancel-comment-reply{float:right}#cancel-comment-reply:before{content:"\2297  "}#comment-list ol{margin-right:0}
