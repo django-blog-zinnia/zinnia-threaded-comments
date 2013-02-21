@@ -33,7 +33,7 @@
 
 {% block script %}
   {{ block.super }}
-  <script type="text/javascript" src="{{ STATIC_URL }}zinnia_threaded_comments/js/comment-reply.js"></script>
+  {% if object.comments_are_open %}<script type="text/javascript" src="{{ STATIC_URL }}zinnia_threaded_comments/js/comment-reply.js"></script>{% endif %}
 {% endblock %}
 
 {% block body-class %}entry entry-{{ object.pk }}{% if object.featured %} featured{% endif %} year-{{ object.creation_date|date:"Y" }} month-{{ object.creation_date|date:"m" }} week-{{ object.creation_date|date:"W" }} day-{{ object.creation_date|date:"d" }}{% endblock %}
@@ -118,9 +118,11 @@
            title="{% trans "Direct link to this comment" %}">#</a>
       </p>
       {{ node.comment|linebreaks }}
+      {% if object.comments_are_open %}
       <p class="comment-reply">
         <a href="#comment-form" onclick="return addComment.moveForm('comment-{{ node.pk }}-by-{{ node.user_name|slugify }}', '{{ node.pk }}', 'comment-form')">{% trans "Reply" %}</a>
       </p>
+      {% endif %}
     </li>
     {% if not node.is_leaf_node %}
     <ol class="comment-children">
