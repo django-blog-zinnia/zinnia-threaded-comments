@@ -14,7 +14,8 @@ p.comment-reply {
 }
 
 #comment-list {
-  ol {
-    margin-right: 0;
+  li.reply {
+    padding: 0;
   }
 }
+

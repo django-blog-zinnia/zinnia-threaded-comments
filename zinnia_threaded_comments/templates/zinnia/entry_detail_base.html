@@ -125,9 +125,11 @@
       {% endif %}
     </li>
     {% if not node.is_leaf_node %}
-    <ol class="comment-children">
-      {{ children }}
-    </ol>
+    <li class="reply">
+      <ol class="comment-children">
+        {{ children }}
+      </ol>
+    </li>
     {% endif %}
     {% endrecursetree %}
   </ol>
