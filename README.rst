@@ -26,4 +26,4 @@ https://docs.djangoproject.com/en/dev/ref/contrib/comments/custom/
 
 .. _`django-blog-zinnia`: http://www.django-blog-zinnia.com/
 .. _`django.contrib.comments`: https://docs.djangoproject.com/en/dev/ref/contrib/comments/
-.. _`Zinnia is installed`: http://django-blog-zinnia.com/documentation/getting-started/install/
+.. _`Zinnia is installed`: http://docs.django-blog-zinnia.com/en/latest/getting-started/install.html
