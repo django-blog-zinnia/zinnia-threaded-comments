@@ -1,3 +1,4 @@
+"""Initial state of the comments"""
 from south.db import db
 from south.v2 import SchemaMigration
 
@@ -15,7 +16,6 @@ class Migration(SchemaMigration):
             ('level', self.gf('django.db.models.fields.PositiveIntegerField')(db_index=True)),
         ))
         db.send_create_signal('zinnia_threaded_comments', ['ThreadedComment'])
-
 
     def backwards(self, orm):
         # Deleting model 'ThreadedComment'
@@ -92,4 +92,3 @@ class Migration(SchemaMigration):
     }
 
     complete_apps = ['zinnia_threaded_comments']
-
