@@ -91,8 +91,8 @@ INSTALLED_APPS = (
     'django_comments',
     'mptt',
     'tagging',
-    'zinnia',
     'zinnia_threaded_comments',
+    'zinnia',
 )
 
 COMMENTS_APP = 'zinnia_threaded_comments'
