@@ -81,7 +81,6 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 INSTALLED_APPS = (
     'django.contrib.auth',
     'django.contrib.sitemaps',
-    'django.contrib.comments',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
@@ -89,10 +88,11 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.admindocs',
     'django.contrib.staticfiles',
-    'zinnia_threaded_comments',
+    'django_comments',
     'mptt',
-    'zinnia',
     'tagging',
+    'zinnia_threaded_comments',
+    'zinnia',
 )
 
 COMMENTS_APP = 'zinnia_threaded_comments'

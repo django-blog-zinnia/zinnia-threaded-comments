@@ -1,7 +1,8 @@
 """Models for zinnia-threaded-comments"""
-from django.contrib.comments.models import Comment
-from django.contrib.comments.managers import CommentManager
 from django.utils.translation import ugettext_lazy as _
+
+from django_comments.models import Comment
+from django_comments.managers import CommentManager
 
 from mptt.models import MPTTModel
 from mptt.models import TreeForeignKey

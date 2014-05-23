@@ -1,8 +1,9 @@
 """Admin for zinnia-threaded-comments"""
 from django.contrib import admin
-from django.contrib.comments import get_model
-from django.contrib.comments.admin import CommentsAdmin
 from django.utils.translation import ugettext_lazy as _
+
+from django_comments import get_model
+from django_comments.admin import CommentsAdmin
 
 from zinnia_threaded_comments.models import ThreadedComment
 
