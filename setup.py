@@ -8,7 +8,7 @@ __license__ = 'BSD License'
 __author__ = 'Fantomas42'
 __email__ = 'fantomas42@gmail.com'
 
-__url__ = 'https://github.com/Fantomas42/zinnia-threaded-comments'
+__url__ = 'https://github.com/django-blog-zinnia/zinnia-threaded-comments'
 
 setup(
     name='zinnia-threaded-comments',
