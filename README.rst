@@ -3,7 +3,7 @@ Zinnia-threaded-comments
 ========================
 
 Zinnia-threaded-comments is a python package providing threaded comments
-for `django-blog-zinnia`_ based on `django.contrib.comments`_.
+for `django-blog-zinnia`_ based on `django-contrib-comments`_.
 
 Installation
 ============
@@ -20,15 +20,28 @@ as the ``COMMENTS_APP``.
 Now Zinnia can handle threaded comments.
 
 .. warning::
-   * `zinnia_threaded_comments` must be registered before the `zinnia` app to bypass
-     the loading of the Zinnia's templates.
-   * You need to use the ``django.template.loaders.eggs.Loader`` template
-     loader if you have installed the package as an egg.
+   `zinnia_threaded_comments` must be registered before the `zinnia` app to bypass
+   the loading of the Zinnia's templates.
+
+Protip
+======
+
+If you plan to customise the default template of an entry with the
+threaded comments, create in your project a ``zinnia/entry_detail.html``
+template starting with: ::
+
+  {% extends "zinnia/entry_detail_base.html" %}
+
+By doing this you don't have to reimplement the template logic provided by
+the app, and just have to customize the needed blocks.
+
+Going further
+=============
 
 More informations about customizations of the comments framework at:
-https://docs.djangoproject.com/en/dev/ref/contrib/comments/custom/
+http://django-contrib-comments.readthedocs.org/en/latest/custom.html
 
 .. _`django-blog-zinnia`: http://www.django-blog-zinnia.com/
-.. _`django.contrib.comments`: https://docs.djangoproject.com/en/dev/ref/contrib/comments/
+.. _`django-contrib-comments`: https://github.com/django/django-contrib-comments
 .. _`django-app-namespace-template-loader`: https://github.com/Fantomas42/django-app-namespace-template-loader
 .. _`Zinnia is installed`: http://docs.django-blog-zinnia.com/en/latest/getting-started/install.html
