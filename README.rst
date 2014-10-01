@@ -39,7 +39,7 @@ Going further
 =============
 
 More informations about customizations of the comments framework at:
-https://docs.djangoproject.com/en/dev/ref/contrib/comments/custom/
+http://django-contrib-comments.readthedocs.org/en/latest/custom.html
 
 .. _`django-blog-zinnia`: http://www.django-blog-zinnia.com/
 .. _`django-contrib-comments`: https://github.com/django/django-contrib-comments
