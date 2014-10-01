@@ -3,7 +3,7 @@ Zinnia-threaded-comments
 ========================
 
 Zinnia-threaded-comments is a python package providing threaded comments
-for `django-blog-zinnia`_ based on `django.contrib.comments`_.
+for `django-blog-zinnia`_ based on `django-contrib-comments`_.
 
 Installation
 ============
@@ -42,6 +42,6 @@ More informations about customizations of the comments framework at:
 https://docs.djangoproject.com/en/dev/ref/contrib/comments/custom/
 
 .. _`django-blog-zinnia`: http://www.django-blog-zinnia.com/
-.. _`django.contrib.comments`: https://docs.djangoproject.com/en/dev/ref/contrib/comments/
+.. _`django-contrib-comments`: https://github.com/django/django-contrib-comments
 .. _`django-app-namespace-template-loader`: https://github.com/Fantomas42/django-app-namespace-template-loader
 .. _`Zinnia is installed`: http://docs.django-blog-zinnia.com/en/latest/getting-started/install.html
