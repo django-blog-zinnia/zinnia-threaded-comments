@@ -1,5 +1,9 @@
 {% extends "zinnia:zinnia/entry_detail_base.html" %}
-{% load static i18n comments zinnia_tags mptt_tags %}
+{% load i18n %}
+{% load static %}
+{% load comments %}
+{% load mptt_tags %}
+{% load zinnia %}
 
 {% block link %}
   {{ block.super }}
@@ -16,9 +20,11 @@
     {% recursetree comment_list %}
     {% with comment=node %}
     <li id="comment-{{ comment.pk }}-by-{{ comment.user_name|slugify }}"
-        class="comment vcard {% cycle box1,box2 %}{% if comment.user %} authenticated-comment{% if comment.user.is_staff %} staff-comment{% endif %}{% if comment.user.is_superuser %} superuser-comment{% endif %}{% endif %}">
+        class="comment vcard {% cycle 'box1' 'box2' %}{% if comment.user %} authenticated-comment{% if comment.user.is_staff %} staff-comment{% endif %}{% if comment.user.is_superuser %} superuser-comment{% endif %}{% endif %}">
+      {% block comment-image %}
       <img src="{% get_gravatar comment.email 60 "G" %}"
            class="gravatar photo" alt="{{ comment.name }}" />
+      {% endblock comment-image %}
       {% block comment-info %}
       <p class="comment-info">
 	{% if comment.url %}
@@ -28,9 +34,9 @@
 	<span class="fn">{{ comment.name }}</span>
 	{% endif %}
 	{% trans "on" context "on date" %}
-        <abbr class="comment-published" title="{{ comment.submit_date|date:"c" }}">
+        <time class="comment-published" datetime="{{ comment.submit_date|date:"c" }}">
           {{ comment.submit_date|date:"SHORT_DATETIME_FORMAT" }}
-        </abbr>
+        </time>
         <a href="#comment-{{ comment.pk }}-by-{{ comment.user_name|slugify }}"
            id="c{{ comment.pk }}" class="anchor-link"
            title="{% trans "Direct link to this comment" %}">#</a>
