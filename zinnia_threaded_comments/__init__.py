@@ -1,6 +1,6 @@
 """zinnia_threaded_comments"""
-from zinnia_threaded_comments.models import ThreadedComment
 from zinnia_threaded_comments.forms import ThreadedCommentForm
+from zinnia_threaded_comments.models import ThreadedComment
 
 
 def get_model():

@@ -1,5 +1,6 @@
 """Convert comments to threadedcomments"""
 from south.v2 import DataMigration
+
 from zinnia_threaded_comments.models import ThreadedComment
 
 
