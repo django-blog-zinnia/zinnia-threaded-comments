@@ -1,4 +1,7 @@
 """zinnia_threaded_comments"""
+default_app_config = (
+    'zinnia_threaded_comments.apps.ZinniaThreadedCommentsConfig'
+)
 
 
 def get_model():
